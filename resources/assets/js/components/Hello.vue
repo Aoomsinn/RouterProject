@@ -1,0 +1,7 @@
+<template>
+    <div class="container">
+        <div class="row">
+            <h2>Hello World</h2>
+        </div>
+    </div>
+</template>
