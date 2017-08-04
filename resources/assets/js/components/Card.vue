@@ -41,7 +41,7 @@
     width: 20rem;
     margin-bottom: 20px;
     float: none;
-    margin: auto;
+    margin: 10px auto;
 
     img {
         border-radius: 5px 5px 0 0;
