@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="number">
     <div class="row">
-        <div class="col-xs-2 col-centered">
+        <div class="col-xs-3 col-centered">
             <input class="form-control" type="text" :value="counter">
         </div>
     </div>
@@ -23,11 +23,20 @@
 </script>
 
 <style lang="scss">
-.col-centered{
-    float: none;
-    margin: 10px auto;
+.number{
+    .col-centered{
+        float: none;
+        margin: 10px auto;
+    }
+    .form-control{
+        text-align: center;
+        font-size: 2em;
+    }
+    .btn{
+        padding: 6px 20px;
+        margin: 0px 5px;
+        font-size: 1.2em;
+    }
 }
-.form-control{
-    text-align: center;
-}
+
 </style>
