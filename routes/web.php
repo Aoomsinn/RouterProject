@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('{vue_router?}', function () {
+	return view('home');
+})->where('vue_router', '[\/\w\.-]*');
