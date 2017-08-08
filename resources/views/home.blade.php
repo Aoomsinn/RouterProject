@@ -35,7 +35,7 @@
                 position: relative;
             }
 
-            .content {
+            .center {
                 text-align: center;
             }
 
@@ -63,7 +63,7 @@
     <body>
         <div id="app">
             <div class="flex-center position-ref full-height">
-                <div class="content">
+                <div class="container center">
                     <div class="title m-b-md">
                         Router project
                     </div>
