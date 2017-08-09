@@ -1,8 +1,8 @@
 import VueRouter    from 'vue-router'
 
-const Hello = (resolve) => require(['./components/Hello.vue'], resolve)
-const Numbers = (resolve) => require(['./components/Number.vue'], resolve)
-const Card = (resolve) => require(['./components/Card.vue'], resolve)
+const Hello = (resolve) => require(['./components/hello.vue'], resolve)
+const Numbers = (resolve) => require(['./components/number.vue'], resolve)
+const Card = (resolve) => require(['./components/card.vue'], resolve)
 
 export default new VueRouter({
     mode: 'history',

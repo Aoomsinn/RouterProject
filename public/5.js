@@ -1,4 +1,4 @@
-webpackJsonp([2],{
+webpackJsonp([5],{
 
 /***/ 46:
 /***/ (function(module, exports) {
@@ -80,6 +80,145 @@ function toComment(sourceMap) {
 	return '/*# ' + data + ' */';
 }
 
+
+/***/ }),
+
+/***/ 61:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(73)
+}
+var Component = __webpack_require__(8)(
+  /* script */
+  __webpack_require__(62),
+  /* template */
+  __webpack_require__(63),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "/Users/aoomsinn/Desktop/RouterProject/resources/assets/js/components/Card.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Card.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3ecffaa8", Component.options)
+  } else {
+    hotAPI.reload("data-v-3ecffaa8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 62:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            cards: [{ url: 'https://image.freepik.com/free-vector/summer-background-with-delicious-melted-strawberry-ice-cream_23-2147627395.jpg',
+                title: 'Hello Summer Enjoy',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/hand-drawn-ice-cream-set_23-2147633215.jpg',
+                title: 'Ice Cream Collection',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/retro-ice-cream_23-2147494315.jpg',
+                title: 'Hello Summer Enjoy',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/background-of-chocolate-ice-cream-with-wafer_23-2147638404.jpg',
+                title: 'Ice Cream BG',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/ice-cream-background-with-nice-phrase_23-2147634710.jpg',
+                title: 'Completes Me',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/nice-ice-cream-character-background_23-2147622813.jpg',
+                title: 'Hello Summer',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/background-with-summer-elements-and-geometric-shapes_23-2147634855.jpg',
+                title: 'Summer Sale',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/watercolor-cup-of-ice-cream_23-2147641793.jpg',
+                title: 'Enjoy The Summer',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/realistic-ice-cream_1067-116.jpg',
+                title: 'Ice Cream',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/retro-background-of-delicious-ice-creams_23-2147637832.jpg',
+                title: 'Yummy',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/four-ice-creams_1114-225.jpg',
+                title: 'Hello Ice Cream',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/watercolor-snowflakes-in-colorful-style_23-2147525357.jpg',
+                title: 'Snow Flakes',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/ice-cream-poster-design_23-2147639176.jpg',
+                title: 'Daily Fresh',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/ice-cream-cards-in-flat-design_23-2147633947.jpg',
+                title: 'Buy Now',
+                name: 'By Aoomsinn' }, { url: 'https://image.freepik.com/free-vector/background-of-cute-ice-cream-with-phrase_23-2147635654.jpg',
+                title: 'Good idea',
+                name: 'By Aoomsinn' }]
+        };
+    }
+});
+
+/***/ }),
+
+/***/ 63:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "card-group"
+  }, _vm._l((_vm.cards), function(card) {
+    return _c('div', {
+      staticClass: "card"
+    }, [_c('img', {
+      staticClass: "card-img-top",
+      attrs: {
+        "src": card.url
+      }
+    }), _vm._v(" "), _c('div', {
+      staticClass: "card-block"
+    }, [_c('h4', {
+      staticClass: "card-title"
+    }, [_vm._v("\n                " + _vm._s(card.title) + "\n            ")]), _vm._v(" "), _c('p', {
+      staticClass: "card-text"
+    }, [_vm._v("\n                " + _vm._s(card.name) + "\n            ")])])])
+  }))
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-3ecffaa8", module.exports)
+  }
+}
 
 /***/ }),
 
@@ -339,47 +478,44 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 78:
+/***/ 73:
 /***/ (function(module, exports, __webpack_require__) {
 
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(81)
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(74);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(66)("3e21b984", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ecffaa8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Card.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3ecffaa8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Card.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
 }
-var Component = __webpack_require__(8)(
-  /* script */
-  __webpack_require__(83),
-  /* template */
-  __webpack_require__(84),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-Component.options.__file = "/Users/aoomsinn/Desktop/RouterProject/resources/assets/js/components/number.vue"
-if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] number.vue: functional components are not supported with templates, they should use render functions.")}
 
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-54ba7a41", Component.options)
-  } else {
-    hotAPI.reload("data-v-54ba7a41", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
+/***/ }),
 
-module.exports = Component.exports
+/***/ 74:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(46)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  border-radius: 5px;\n  width: 20rem;\n  margin-bottom: 20px;\n  float: none;\n  margin: 20px;\n  display: inline-block;\n}\n.card img {\n    border-radius: 5px 5px 0 0;\n    width: 100%;\n}\n.card-block {\n  padding: 10px;\n}\n.container {\n  padding: 2px 16px;\n}\n@media (max-width: 511px) {\n.card {\n    width: 35rem;\n}\n}\n", ""]);
+
+// exports
 
 
 /***/ }),
@@ -479,130 +615,6 @@ module.exports = function normalizeComponent (
   }
 }
 
-
-/***/ }),
-
-/***/ 81:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(82);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(66)("70702d6e", content, false);
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-54ba7a41\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./number.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-54ba7a41\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./number.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 82:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(46)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "\n.number .col-centered {\n  float: none;\n  margin: 10px auto;\n}\n.number .form-control {\n  text-align: center;\n  font-size: 2em;\n}\n.number .btn {\n  padding: 6px 20px;\n  margin: 0px 5px;\n  font-size: 1.2em;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 83:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            counter: 0
-        };
-    }
-});
-
-/***/ }),
-
-/***/ 84:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "number"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-xs-3 col-centered"
-  }, [_c('input', {
-    staticClass: "form-control",
-    attrs: {
-      "type": "text"
-    },
-    domProps: {
-      "value": _vm.counter
-    }
-  })])]), _vm._v(" "), _c('div', {
-    staticClass: "row"
-  }, [_c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.counter -= 1
-      }
-    }
-  }, [_vm._v("-")]), _vm._v(" "), _c('button', {
-    staticClass: "btn btn-default",
-    attrs: {
-      "type": "button"
-    },
-    on: {
-      "click": function($event) {
-        _vm.counter += 1
-      }
-    }
-  }, [_vm._v("+")])])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-54ba7a41", module.exports)
-  }
-}
 
 /***/ })
 
