@@ -1,7 +1,7 @@
 <template>
     <div class="number">
         <div class="row">
-            <div class="col-xs-3 col-centered">
+            <div class="col-xs-2 col-centered">
                 <input class="form-control" type="text" :value="counter">
             </div>
         </div>

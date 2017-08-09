@@ -563,7 +563,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-xs-3 col-centered"
+    staticClass: "col-xs-2 col-centered"
   }, [_c('input', {
     staticClass: "form-control",
     attrs: {
